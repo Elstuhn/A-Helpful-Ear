@@ -1,4 +1,3 @@
-//API KEY AIzaSyCfn97T5S11xfMZbr8Bl0nvk5n0FCg50mA
 chrome.storage.local.set({ transcript: "" });
 
 const videoElement = document.querySelector("video");
