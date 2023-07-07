@@ -7,15 +7,9 @@ import requests
 import redis
 import os
 
-
-r = redis.Redis(
-    host='redis-14946.c23738.us-east-1-mz.ec2.cloud.rlrcp.com',
-    port=14946,
-    password='g9e5H3aUeAYVOKHnYDMEQoy4QidRElPR')
 app = Flask(__name__)
 cors = CORS(app)
 app.config['CORS_HEADERS'] = 'Content-Type'
-ai21.api_key = "Gv4kFMkfaThv9mH4mVhAPMjJLvFIK9tl"
 
 def get_transcription(url: str) -> str:
     value = r.get(url)
