@@ -1,0 +1,13 @@
+{
+  "name": "A-Helpful-Ear",
+  "version": "1.0",
+  "manifest_version": 3,
+  "host_permissions": ["*://*/"],
+  "permissions": ["storage", "tabs", "scripting", "downloads"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "./icons/reluicon.png"
+  }
+}
