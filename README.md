@@ -3,12 +3,12 @@
 <html>
 <body>
 	<h1>AI21 Speech Recording Chrome Extension</h1>
-	<p>This Chrome Extension uses AI21 API to record speech during a meeting or video, store it in a Redis database and then ask any questions.</p>
+	<p>This Chrome Extension uses AI21 API to take down meeting minutes from recording your meetings</p>
 	<h2>Features</h2>
 	<ul>
 		<li>Record speech during meetings or videos</li>
 		<li>Store recordings in a Redis database</li>
-		<li>Ask any questions related to the recording</li>
+		<li>Get precise meeting minutes</li>
 	</ul>
 	<h2>Installation</h2>
 	<ol>
