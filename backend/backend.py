@@ -83,8 +83,7 @@ def scribe():
     if request.method == "POST":
         path = "../minutes.docx"
         url = request.get_json()['url']
-        #transcript = get_transcription(url)
-        print(transcript)
+        transcript = get_transcription(url)
         document = createDoc(transcript)
         #return ("OK", 200)
         #return send_file(path, as_attachment=True)
