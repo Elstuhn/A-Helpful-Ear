@@ -80,20 +80,6 @@ def createDoc(transcript):
 
 @app.route('/scribe', methods=["POST"])
 def scribe():
-    transcript = """
-    So regarding our startup plan, I think we should focus on building
-    the MVP now, the minimal viable product, so Sithu, Timothy and Elliott will work 
-    on the MVP along with Amir, you guys will be handling the web development, security
-    and the database. I will be working on the business plan and the marketing strategy.
-    Dr wilson will be mentoring us and guiding us while giving us advice so if you guys have any questions
-    just go to him. Me and Amir will also talk to the investors and get the funding for the startup as well as
-    companies like AISG, AWS, Google Cloud and Microsoft Azure to partner with them in order to get their specialists
-    to curate content such as blogs and courses for us. Can we get the MVP done by around 10th October 2023? That would be great.
-    Me and Amir will be talking to business partners for at least 2 months and try to get courses so you guys can fill up
-    the course page. I think after getting investment, we will have around 10 thousand dollars to spend 
-    and those 10 thousand dollars could go to us hosting hackathons or in person conferences.
-    Then we will get more exposure and marketing at the same time which will be awesome.
-    """
     if request.method == "POST":
         path = "../minutes.docx"
         url = request.get_json()['url']
